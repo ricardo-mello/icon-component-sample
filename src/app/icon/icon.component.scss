@@ -1,0 +1,39 @@
+:host {
+  // Propriedades que podem ser alteradas via variáveis CSS
+  --icon-font-size: 1em;
+  --icon-color: inherit;
+
+  display: inline-block;
+
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font-size: var(--icon-font-size);
+
+  contain: strict;
+
+  fill: currentColor;
+  color: var(--icon-color);
+
+  box-sizing: content-box !important;
+}
+
+.icon-inner {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+:host(.small) {
+  font-size: 18px;
+}
+
+:host(.large) {
+  font-size: 44px;
+}
