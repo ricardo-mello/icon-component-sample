@@ -1,3 +1,9 @@
-img {
-  padding: 0 10px;
+app-icon {
+  color: #34495e;
+  vertical-align: middle;
+
+  &.action {
+    color: #2c3e50;
+    --icon-font-size: 5em;
+  }
 }

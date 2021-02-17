@@ -2,9 +2,15 @@
 <div class="background-layer"></div>
 
 <main>
-  <img src="/assets/icons/previous.svg">
-  <img src="/assets/icons/{{ action }}.svg" (click)="alternate()">
-  <img src="/assets/icons/next.svg">
+  <app-icon size="large" src="/assets/icons/previous.svg"></app-icon>
+
+  <app-icon
+    (click)="alternate()"
+    class="action"
+    src="/assets/icons/{{ action }}.svg"
+  ></app-icon>
+
+  <app-icon size="large" src="/assets/icons/next.svg"></app-icon>
 </main>
 
 
