@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+ * Eu adicionei todos os estilos nesse arquivo pra
+ * deixar o app.component.scss limpo.
+ *
+ * Em um projeto normal ele deveria estar dividido em
+ * diferentes componentes
+ */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+app-root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-artwork {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(40px);
+  -webkit-filter: blur(40px);
+  z-index: 1;
+}
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+main {
+  height: auto;
+  padding: 20px 30px;
+  margin: 0 auto;
+  z-index: 3;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 20px;
+}
+
+a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+}

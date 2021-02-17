@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'icon-component-sample';
+  action = 'play';
+
+  alternate() {
+    this.action = this.action === 'play' ? 'pause' : 'play';
+  }
 }

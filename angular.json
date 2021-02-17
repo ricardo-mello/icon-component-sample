@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "icon-component-sample"
+  "defaultProject": "icon-component-sample",
+  "cli": {
+    "analytics": false
+  }
 }
